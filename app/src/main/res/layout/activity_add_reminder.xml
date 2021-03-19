@@ -19,20 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <EditText
-        android:id="@+id/etTime"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:hint="Time"
-        android:inputType="textPersonName"
-        android:textAlignment="center"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etMessage" />
-
     <TextView
         android:id="@+id/textReminder"
         android:layout_width="match_parent"
@@ -49,13 +35,36 @@
         android:id="@+id/btnReminder"
         android:layout_width="match_parent"
         android:layout_height="60dp"
-        android:layout_marginTop="156dp"
-        android:text="ADD REMINDER"
+        android:layout_marginTop="64dp"
         android:backgroundTint="@android:color/black"
+        android:text="ADD REMINDER"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/etTime" />
+        app:layout_constraintTop_toBottomOf="@+id/btnSetTime" />
+
+    <Button
+        android:id="@+id/btnSetTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="set time"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvSetTime" />
+
+    <TextView
+        android:id="@+id/tvSetTime"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="60dp"
+        android:text="Time"
+        android:textSize="20dp"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etMessage" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
